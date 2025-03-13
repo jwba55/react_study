@@ -1,0 +1,74 @@
+javascript, ecmascript
+
+최초의 웹 브라우저는 
+	Netscape Navigator : 이게 먼저 나왔었음.
+		이 웹을 만든 회사에서 html만 가지고 불가능하다고 해서 html에서 자바언어를 사용할수있게 하려고 만든 것이 javascript이다.
+	Internet Explorer : 윈도우에 기본적으로 설치되어 있어서 얘만 살아 남았음.
+					▼
+	firefox
+	chrome 등등..
+
+자바 스크립트의 표준 : ecma(유럽 컴퓨터 제조사 연합)에서 만듦.
+	ES 1(1997) ->2, 3(~1999)
+	이 이후 explorer에서 멋대로 함.
+	ES 5 (2009)
+	★ES 6 (ES 2015) 자바 스크립트에 있어서 큰 변화를 가져옴. <분기점>
+	ES 7 (2016)
+	ES 8 (2017)
+	...
+	ES 2025 최신 문법의 경우 브라우저에서 지원이 안되는 경우가 생김
+
+웹 외부에서 작동하는 자바 스크립트와 웹 내부에서 작동하는 자바스크립트로 나누어진다.
+	작성 위치: head 태그 혹은 body 태그 최하단에 작성
+	작성 법:
+		외부: <scpript src="/스크립트 경로/파일명.js" />
+	
+		내부: <scpript> 이 안에 스크립트 내용 작성</scpript>
+
+출력문:
+	console.log("") 개발자 도구>콘솔창에 출력
+	alert("") 팝업 창을 띄워 출력
+
+	document : 문서전체
+		document.wirte("") html 문서 내용에 출력
+			제약이 많음.
+		document.body.InnerHtml = "";
+
+
+.이 나타내는 것: 소유
+
+브라우저에서 새로운 문법을 확인하는 방법:
+	W3Schools.com에서 문법 검색 -> 최하단에 브라우저 확인
+	caniuse사이트 -> 문법 검색 -> 브라우저별  호환성 확인 가능
+
+
+자바의 기본형 데이터타입 :
+	정수 : byte, short, int, long
+	실수 : float, double
+	문자형: char ''
+	논리형: boolean
+
+자바 스크립트의 기본형 :
+	number, string:("", ''), boolean, null, undefind: 정의된 적이 없음.
+	새로 추가됨: symbol: 중복되지 않는 고유값 사용
+				bigint: number 타입에 안정적으로 저장할 수 없는 큰 정수 값 (number 타입의 정수뒤에 n을 붙여서 사용 혹은 함수() 사용)
+
+타입 확인 연산자: typeof
+
+
+기본형들 간의 형변환
+명시적인 형변환 : 타입 이름 함수를 사용하여 Number, String, Boolean 변환가능
+
+자동 형변환
+	문자열 + 정수 = 문자열 변환
+	문자열x + 문자열x = 정수형
+
+Boolen으로의 변환을 제외하면 , 자동형변환 사용은 자제
+
+형변환 확인:
+	W3Schools conversion에서 확인
+
+입력문:
+	alert() 
+	confirm() 인자로 전달한 것을 출력하고 ,사용자에게 양자 택일의 선택을 주고 선택에 따라 true/false로 결과반환
+	prompt() 인자로 전달한 것을 출력하고, 사용자가 입력한 값을 반환함.
