@@ -69,6 +69,56 @@ Boolen으로의 변환을 제외하면 , 자동형변환 사용은 자제
 	W3Schools conversion에서 확인
 
 입력문:
-	alert() 
 	confirm() 인자로 전달한 것을 출력하고 ,사용자에게 양자 택일의 선택을 주고 선택에 따라 true/false로 결과반환
 	prompt() 인자로 전달한 것을 출력하고, 사용자가 입력한 값을 반환함.
+
+
+
+연산자:
+	산술 연산자:
+		+, -, *, /, %
+
+
+	대입 연산자:
+		=, +=, -=, *=, /=, &=
+
+	
+	증감 연산자:
+		++, --
+		ex) console.log(x++);
+			console.log(++X);
+
+	
+	비교 연산자:
+		== : 비교하는 두 값의 타입을 동일한 타입으로 변환하여 비교
+		=== : 비교하는 두 값의 타입과 값이 모두 동일한 경우에만 true
+			ex) console.log(0 == false, 0 === false);
+				console.log(0 == "", 0 === "");
+				console.log(123 == "123", 123 === "123");
+				console.log(null == undefined, null === undefined);
+		!== :
+		!=, <, >, <=, >=
+
+	실수 연산을 정밀하게 하고 싶다면, 정수화 시켜서 계산 후 실수로 변환
+	실수는 동등 비교 금지
+	NaN은 자신을 포함한 다른 어떤 값과도 다르다
+
+
+	논리 연산자:
+		&& : 좌항 값을 boolean 타입으로 변환했을 때 true 이면, 결과는 우항, 좌항 값을 boolean 타입으로 변환 했을 때 false이면, 결과는 변환 전 좌항
+			(자바에서는 에러 남. 스크립트에서는 강제형변환을 해서 연산함.)
+
+		|| : 좌항 값을 boolean 타입으로 변환했을 때 true 이면, 결과는 좌항, 좌항 값을 boolean 타입으로 변환 했을 때 false이면, 결과는 변환 전 우항
+
+		! : 
+
+		boolean 변환 시 false로 변환되는 것들:
+			Number: 0, NaN
+			String: ""
+			null
+			undefind
+	
+
+	비트 연산자: & | ^ ~ << >> >>>
+
+	기타 연산자: ?:, typeof, instanceof, delete, void, ?., ??

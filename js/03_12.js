@@ -89,10 +89,19 @@ console.log(result); */
 
 //2개의 숫자를 입력받고, 두 수를 더한 결과를 x+y = z 형태로 출력
 
+/*
 let x = prompt("X를 입력하세요");
 let y = prompt("Y를 입력하세요");
 x = Number(x);
 y = Number(y)
 let z = x + y;
 console.log(x + "+" + y + "=" + z);
-alert(`${x}+${y} = ${z}`); //백팁사용: 템플릿리터럴 `문자열 내부에 ${}사용`
+alert(`${x}+${y} = ${z}`); //백팁사용: 템플릿리터럴 `문자열 내부에 ${}사용` */
+
+//number 타입 값들
+console.log(123e1, 123e2, 123e2 - 1);
+console.log(10, 0b10, 0o10, 0x10);  //10진수 2진수 8진수 16진수 - 접두어 사용
+console.log(Infinity, typeof Infinity);
+console.log(NaN, typeof NaN);  //Not a Number: 숫자가 아님을 표현
+console.log(Number("가나다")); //숫자가 아닌 것을 숫자로 바꾸려고 했을때
+
